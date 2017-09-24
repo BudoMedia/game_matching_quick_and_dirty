@@ -61,7 +61,7 @@ function initialize() {
 
 // Initializes grid for game //
 grid = initialize();
-console.log(grid);
+// console.log(grid);
 // console.log(Object.keys(grid));
 
 
@@ -69,6 +69,7 @@ console.log(grid);
 function numAdjust(name) {
   return "box" + (Number(name.slice(3)) - 1);
 }
+
 
 
 // On MOuse click //
@@ -90,7 +91,11 @@ function changeBoxColor(name) {
 
   // Reveal selected box //
   document.getElementById(name).textContent = box.num;
-  document.getElementById(name).style.backgroundColor = box.color;
+  // document.getElementById(name).style.backgroundColor = box.color;
+  // console.log("cat" + box.num + ".png");
+  // var pic = "url('assets/cats/cat" + box.num + ".png')";
+  var pic = "url('assets/koi/koi" + box.num + ".png')";
+  document.getElementById(name).style.backgroundImage = pic;
 
 
   // Creates a round for matching pairs //
@@ -109,9 +114,9 @@ function changeBoxColor(name) {
         // Otherwise, show both boxes together for half a second and then hide them again //
         setTimeout(function() {
           document.getElementById(firstBoxName).textContent = ".";
-          document.getElementById(firstBoxName).style.backgroundColor = firstBoxColor;
+          document.getElementById(firstBoxName).style.backgroundImage = "url('')";
           document.getElementById(name).textContent = ".";
-          document.getElementById(name).style.backgroundColor = color;
+          document.getElementById(name).style.backgroundImage = "url('')";
         }, 500);
       }
     count = 0;
@@ -169,7 +174,9 @@ function win() {
 
 
     // Outputs win //
-    document.getElementById("win").textContent = "You Win!";
+    document.getElementById("table-background").style.backgroundImage = "url('./assets/koi/background.png')";
+    // document.getElementById("table-background").style.backgroundImage = "url('./assets/cats/background.png')";
+    // document.getElementById("win").textContent = "You Win!";
     // console.log("You Win!");
   }
 
