@@ -1,0 +1,49 @@
+/******************************
+*****  Basic Setup  ***********
+******************************/
+
+
+* {
+  margin: 0px auto;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+table {
+  margin: 0px auto;
+  border: 20px solid white;
+  padding: 0px;
+  border-collapse: collapse;
+  background-color: red;
+}
+
+.box {
+  border: 5px solid white;
+  width: 150px;
+  height: 150px;
+  font-size: 0;
+}
+
+
+/****************************************/
+
+div {
+  background-color: blue;
+  font-size: 0;
+}
+
+.clicks, #win {
+  text-align: center;
+}
+
+#box1, #box3, #box6, #box8, #box9, #box11, #box14, #box16 {
+  background-color: #f2f2f2;
+}
+
+#box2, #box4, #box5, #box7, #box10, #box12, #box13, #box15 {
+  background-color: #d9d9d9;
+}

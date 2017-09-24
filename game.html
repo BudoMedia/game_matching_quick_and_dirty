@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Game: Matching Cards</title>
+      <link type="text/css" rel="stylesheet" href="game.css">
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <td><button class="box" id="box1" type="button" onmouseover="highlight('box1')" onmouseleave="unhighlight('box1')" onclick="changeBoxColor('box1')">.</button></td>
+        <td><button class="box" id="box2" type="button" onmouseover="highlight('box2')" onmouseleave="unhighlight('box2')" onclick="changeBoxColor('box2')">.</button></td>
+        <td><button class="box" id="box3" type="button" onmouseover="highlight('box3')" onmouseleave="unhighlight('box3')" onclick="changeBoxColor('box3')">.</button></td>
+        <td><button class="box" id="box4" type="button" onmouseover="highlight('box4')" onmouseleave="unhighlight('box4')" onclick="changeBoxColor('box4')">.</button></td>
+      </tr>
+      <tr>
+        <td><button class="box" id="box5" type="button" onmouseover="highlight('box5')" onmouseleave="unhighlight('box5')" onclick="changeBoxColor('box5')">.</button></td>
+        <td><button class="box" id="box6" type="button" onmouseover="highlight('box6')" onmouseleave="unhighlight('box6')" onclick="changeBoxColor('box6')">.</button></td>
+        <td><button class="box" id="box7" type="button" onmouseover="highlight('box7')" onmouseleave="unhighlight('box7')" onclick="changeBoxColor('box7')">.</button></td>
+        <td><button class="box" id="box8" type="button" onmouseover="highlight('box8')" onmouseleave="unhighlight('box8')" onclick="changeBoxColor('box8')">.</button></td>
+      </tr>
+      <tr>
+        <td><button class="box" id="box9" type="button" onmouseover="highlight('box9')" onmouseleave="unhighlight('box9')" onclick="changeBoxColor('box9')">.</button></td>
+        <td><button class="box" id="box10" type="button" onmouseover="highlight('box10')" onmouseleave="unhighlight('box10')" onclick="changeBoxColor('box10')">.</button></td>
+        <td><button class="box" id="box11" type="button" onmouseover="highlight('box11')" onmouseleave="unhighlight('box11')" onclick="changeBoxColor('box11')">.</button></td>
+        <td><button class="box" id="box12" type="button" onmouseover="highlight('box12')" onmouseleave="unhighlight('box12')" onclick="changeBoxColor('box12')">.</button></td>
+      </tr>
+      <tr>
+        <td><button class="box" id="box13" type="button" onmouseover="highlight('box13')" onmouseleave="unhighlight('box13')" onclick="changeBoxColor('box13')">.</button></td>
+        <td><button class="box" id="box14" type="button" onmouseover="highlight('box14')" onmouseleave="unhighlight('box14')" onclick="changeBoxColor('box14')">.</button></td>
+        <td><button class="box" id="box15" type="button" onmouseover="highlight('box15')" onmouseleave="unhighlight('box15')" onclick="changeBoxColor('box15')">.</button></td>
+        <td><button class="box" id="box16" type="button" onmouseover="highlight('box16')" onmouseleave="unhighlight('box16')" onclick="changeBoxColor('box16')">.</button></td>
+      </tr>
+    </table>
+
+    <h1 class="clicks">CLICKS : <span id="click-number">  </span></h1>
+    <h1 id="win"> </h1>
+
+  </body>
+
+  <script src="game.js"></script>
+
+</html>
